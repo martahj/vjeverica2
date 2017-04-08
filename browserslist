@@ -1,0 +1,7 @@
+# Defaults
+last 2 versions
+Firefox ESR
+
+# So flexbox works
+Safari >= 8
+iOS >= 8

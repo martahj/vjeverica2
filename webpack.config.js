@@ -4,7 +4,7 @@ const HTMLWebpackPluginConfig = require('html-webpack-plugin');
 
 module.exports = {
 	entry: [
-	    './client/app.js',
+	    './client/mountApp.js',
 	],
 	output: {
 		filename: 'bundle.js',
@@ -22,22 +22,25 @@ module.exports = {
 				exclude: /node_modules/,
 				loader: 'babel-loader',
 			},
-	    // {
-	    //    test: /\.html/,
-	    //    loader: 'html-loader'
-	    // },
-	    // {
-	    //    test: /\.css$/,
-	    //    loader: "style-loader!css-loader"
-	    // },
-	    // {
-	    //    test   : /\.(png|jpg)$/,
-	    //    loader : 'url-loader'
-	    // },
-	    // {
-	    //    test   : /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
-	    //    loader : 'file-loader'
-	    // }
+	    {
+	       test: /\.css$/,
+	       loader: "style-loader!css-loader"
+	    },
+			// {
+			// 	test: /\.(png|jpg|svg|gif)$/,
+			// 	include: /node_modules/,
+			// 	loader: 'file-loader',
+			// },
+			{
+				test: /\.(png|jpg|gif)$/,
+				exclude: /node_modules/,
+				loader: 'url-loader?limit=10000',
+			},
+			// {
+			// 	test: /\.svg$/,
+			// 	exclude: /node_modules/,
+			// 	loader: 'file-loader',
+			// },
 		]
 	},
 	resolve: {
