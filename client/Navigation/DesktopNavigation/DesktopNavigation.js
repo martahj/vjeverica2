@@ -12,6 +12,34 @@ const links = [
     link: '/about',
     label: 'About',
   },
+  {
+    link: '/performances',
+    label: 'Performances',
+  },
+  {
+    link: '/special-events',
+    label: 'Special Events',
+  },
+  {
+    link: '/cds',
+    label: 'CDs',
+  },
+  {
+    link: '/lessons',
+    label: 'Lessons',
+  },
+  {
+    link: '/testimonials',
+    label: 'Testimonials',
+  },
+  {
+    link: '/faq',
+    label: 'FAQ',
+  },
+  {
+    link: '/contact',
+    label: 'Contact',
+  },
 ]
 const DesktopNavigation = () => (
   <Toolbar style={navBarStyles}>

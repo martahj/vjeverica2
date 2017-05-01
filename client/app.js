@@ -4,8 +4,9 @@ import {
   Route,
 } from 'react-router-dom'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Splash from './Splash';
-import About from './About';
+import Splash from './routes/Splash';
+import About from './routes/About';
+import Performances from './routes/Performances';
 import Navigation from './Navigation';
 import { appContainerStyle } from './style';
 
@@ -17,6 +18,7 @@ const App = () => (
           <Navigation />
           <Route exact path='/' component={Splash}/>
           <Route path='/about' component={About}/>
+          <Route path='/performances' component={Performances}/>
         </div>
       </Router>
     </MuiThemeProvider>
