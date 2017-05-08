@@ -5,6 +5,7 @@ import FlatButton from 'material-ui/FlatButton';
 import moment from 'moment';
 import selectn from 'selectn';
 import { Row, Col } from 'react-flexbox-grid';
+import formatDateRange from 'util/formatDateRange';
 import {
   titleStyles,
   sectionStyles,
@@ -36,8 +37,7 @@ const EventDetailsModal = ({
   const desc = selectn('desc', event);
   const link = selectn('link', event);
   const location = selectn('location', event);
-  const dateText = `${moment(start).format('YYYY')}`;
-  console.log(typeof dateText);
+  const dateText = formatDateRange(start, end);
   return (
     <Dialog
       open={open}

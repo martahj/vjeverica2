@@ -15,3 +15,5 @@
           - __dataID__
           - _fbq
           - _hsq
+  settings:
+    import/resolver: webpack

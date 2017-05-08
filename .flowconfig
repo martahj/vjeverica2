@@ -3,5 +3,9 @@
 [include]
 
 [libs]
+./definitions
 
 [options]
+esproposal.class_instance_fields=enable
+module.name_mapper='^util\/\(.*\)$' -> '<PROJECT_ROOT>/util/\1'
+module.name_mapper='^definitions\/\(.*\)$' -> '<PROJECT_ROOT>/definitions/\1'

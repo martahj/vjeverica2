@@ -48,6 +48,7 @@ module.exports = {
 		alias: {
 			components: Path.resolve(__dirname, 'client', 'components'),
 			util: Path.resolve(__dirname, 'util'),
+			definitions: Path.resolve(__dirname, 'util'),
 		},
 	},
 }

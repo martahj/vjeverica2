@@ -4,11 +4,14 @@ import {
   Route,
 } from 'react-router-dom'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import injectTapEventPlugin from 'react-tap-event-plugin';
 import Splash from './routes/Splash';
 import About from './routes/About';
 import Performances from './routes/Performances';
 import Navigation from './Navigation';
 import { appContainerStyle } from './style';
+
+injectTapEventPlugin();
 
 const App = () => (
   <div style={appContainerStyle}>
