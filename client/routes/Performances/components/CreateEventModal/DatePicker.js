@@ -82,7 +82,7 @@ class DatePicker extends PureComponent {
     this.props.updateYear(year);
   }
 
-  handleMonthChange = event: Event, index: number, month: number): void => {
+  handleMonthChange = (event: Event, index: number, month: number): void => {
     this.props.updateMonth(month);
   }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import Editor from 'components/Editor';
 
 const paragraphs = [
   `Shirley Johnson grew up in Pittsburgh, PA. immersed in her Croatian heritage.
@@ -50,11 +51,12 @@ const paragraphs = [
 
 const About = () => (
   <div>
-    {paragraphs.map(paragraph => (
+    <Editor />
+    {/* {paragraphs.map(paragraph => (
       <p>
         {paragraph}
       </p>
-    ))}
+    ))} */}
   </div>
 );
 
